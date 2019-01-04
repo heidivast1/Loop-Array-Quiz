@@ -15,7 +15,7 @@ function print(message) {
 for ( var i = 0; i < questions.length; i += 1) {
     question = questions[i][0];
     answer = questions[i][1];
-    response = answer.toLowercase(prompt(question));
+    response = prompt(question).toLowerCase();
     if (response === answer) {
       correctAnswers += 1;
     }
